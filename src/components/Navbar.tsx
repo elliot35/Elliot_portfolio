@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
 import { navLinks } from '../constants/index';
-import { eLogo, menu, close } from '../assets/index';
+import { logo, menu, close } from '../assets/index';
 
 const Navbar = () => {
   return (
@@ -17,8 +17,8 @@ const Navbar = () => {
           onClick={() => {
             window.scrollTo(0, 0);
           }}>
-            <img src={eLogo} alt='logo' className='w-9 h-9 object-contain' />
-          </Link>
+            <img src={logo} alt='logo' className='w-9 h-9 object-contain' style={{ height: '5%', width: '5%' }} />
+        </Link>
       </div>
 
     </nav>
