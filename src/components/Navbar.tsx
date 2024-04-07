@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
-import { navLinks } from '../constants';
-import { eLogo, menu, close } from '../assets';
+import { navLinks } from '../constants/index';
+import { eLogo, menu, close } from '../assets/index';
 
 const Navbar = () => {
   return (
@@ -15,7 +15,6 @@ const Navbar = () => {
           to='/'
           className='flex items-center gap-2'
           onClick={() => {
-            setActive('');
             window.scrollTo(0, 0);
           }}>
             <img src={eLogo} alt='logo' className='w-9 h-9 object-contain' />
