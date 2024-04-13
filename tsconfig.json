@@ -1,16 +1,20 @@
 {
     "compilerOptions": {
-        "outDir": "./dist/",        // path to output directory
-        "sourceMap": true,          // allow sourcemap support
-        "strictNullChecks": true,   // enable strict null checks as a best practice
-        "module": "es6",            // specify module code generation
-        "jsx": "react",             // use typescript to transpile jsx to js
-        "target": "es5",            // specify ECMAScript target version
-        "allowJs": true,             // allow a partial TypeScript and JavaScript codebase
-        "allowSyntheticDefaultImports": true,
+      "target": "es6",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "types": ["react", "tailwindcss", "vite/client"],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "noEmit": true,
+      "esModuleInterop": true,
+      "module": "esnext",
+      "moduleResolution": "bundler",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "jsx": "preserve",
+      "incremental": true,
     },
-    "include": [
-        "./src/",
-    ],
-    "files": ["globals.d.ts"],
-}
+    "include": ["**/*.ts", "**/*.tsx"],
+    "exclude": ["node_modules", "README.md"],
+  }
